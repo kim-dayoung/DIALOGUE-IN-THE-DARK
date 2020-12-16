@@ -1,0 +1,272 @@
+body{width: 100%; height: 100%;
+ overflow:hiden;}
+
+
+#css-selector {
+    background: linear-gradient(287deg, #000000, #3a3a3a, #000000, #3a3a3a, #000000);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: gradient 17s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
+    -moz-animation: gradient 17s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
+    animation: gradient 17s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
+}
+
+.a{width: 100%; height: 100%}
+.a-1{width: 100%; height: 100%; background-image: url(./img/1.png);}
+.b{position: absolute; top: 22%; left: 10%; width: 59%;}
+.c{position: absolute; top: 0%; left: 0%; width: 35%;}
+.d{position: absolute; overflow: hidden; top: 7%; left: 14%; width: 40%;}
+.e{position: absolute; bottom: 0%; left: 0%; width: 12%;}
+.f{position: absolute; bottom: 0%; right: 0%; width: 30%;}
+.g{position: absolute; bottom: 3%; right: 16%; width: 31%;}
+.h{position: absolute; bottom: 23%; left: 5%; width: 11%; }
+.p{position: absolute; bottom:49%; left: 40%; color: white; font-size: 3em; 
+  font-family: 'Noto Serif KR', serif; font-weight: 200;}
+.p1{position: absolute; bottom: 51%; left: 40%; color: white; font-size: 2em; 
+	font-family: 'Noto Serif KR', serif; font-weight: 00;}
+.p2{position: absolute; bottom: 2%; left: 5%; color: #666666; font-size: 0.85em; 
+	font-family: 'Noto Serif KR', serif; font-weight: 200; line-height: 1.8; text-align: center;}
+.i{position: absolute; top: 10%; right: 10%; width: 10%;}
+.j{position: absolute; top: 2%; left: 2%; width: 20%}
+.k{position: absolute; top: 2%; right: 0.5%; width: 33%}
+.l{position: absolute; bottom: 2%; left: 3.5%; width: 93%}
+.m{position: absolute; top: 10%; right: 13%; width: 16%;}
+.n{position: absolute; top: 40%; right: 40%; width: 20%;}
+.k{position: absolute; top: 2%; right: 0.5%; width: 25%}
+
+@-webkit-keyframes rotate {
+from {transform: rotate(0deg);}
+to {transform: rotate(160deg);}
+}
+
+
+#r{-webkit-animation:rotate-center 100s  
+	infinite both;animation:rotate-center 100s infinite both}
+
+#v{animation:vibrate-1 15s linear infinite both}
+
+
+
+#rotate-center {
+  -webkit-animation: rotate-center 90s  infinite both;
+          animation: rotate-center 90s  infinite both;
+}
+
+
+#rotate-center2 {
+  -webkit-animation: rotate-center 55s linear infinite both;
+          animation: rotate-center 55s linear infinite both;
+}
+
+
+
+#scale-up-center {
+  -webkit-animation: scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s infinite alternate both;
+          animation: scale-up-center 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s infinite alternate both;
+}
+
+
+#pulsate-fwd {
+  -webkit-animation: pulsate-fwd 12s ease-in-out infinite both;
+          animation: pulsate-fwd 12s ease-in-out infinite both;
+}
+
+
+@keyframes vibrate-1{0%{transform:translate(0)}20%{transform:translate(-15px,15px)}
+40%{transform:translate(-15px,-15px)}60%{transform:translate(2px,2px)}
+80%{transform:translate(15px,-15px)}100%{transform:translate(0)}}
+
+
+
+@-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%
+{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center
+{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+
+@-webkit-keyframes rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%
+{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center
+{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 22%;
+  }
+  0% {
+    width: 0%;
+  }
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+
+@-webkit-keyframes gradient {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+
+.draw-in {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 15s ease-in-out alternate infinite;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+@-webkit-keyframes rotate-center2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+ p {
+    position: absolute; top: 38%; right: 27%; width: 50%;
+    color: white;
+    margin: 0;
+    padding-bottom: 6rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: 'Noto', serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    animation: glow 1s ease-in-out infinite alternate;
+    text-align: center;
+  }
+  a {
+    font-family: 'Noto', serif;
+    color: white;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 1rem;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px white;
+    }
+    to {
+      text-shadow: 0 0 30px white, 0 0 10px white;
+    }
+  }
+}
+
+#on{position: absolute; top: 40%; right: 25%; width: ;}
+
+
+
+
